@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Cosmeticos</title>
+
+<link rel="stylesheet" href="reset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="./style.css">
+ 
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+        <span class="cabecalho__menu-hamburguer container__imagem"></span>
+    </label>
+    <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Lançamentos</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Cabelos</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">SkinCare</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Corpo e Banho</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Perfurmaria</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Promoções</a></li>
+    </ul>
+    </div> 
+    
+    <div class="container">
+        <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"class="container__imagem"></a>
+        <a href="#"><img src="img/Compras.svg" alt="Minhas compras" class="container__imagem"></a>
+        <a href="#"><img src="img/Usuario.svg" alt="Minha conta" class="container__imagem"></a>
+    </div>
+ 
+    </header> 
+
+<section class="banner">
+    <div class="img-banner">
+    <h2 class="banner__titulo">BELEZURAS</h2>
+    <input type="search" class="banner__pesquisa" placeholder="O que você procura hoje?">
+</section>
+<section class="carrossel">
+    <h2 class="carrossel__titulo">Tudo que você precisa para realçar sua beleza</h2>
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+     <!-- If we need pagination -->
+     <div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+      <!-- 1ª secão -->
+      <div class="swiper-slide"><img src="img/skincare1.jpg" alt="Promoção skincare1"></div>
+      <div class="swiper-slide"><img src="img/maquiagem.jpg" alt="Promoção maquiagem"></div>
+      <div class="swiper-slide"><img src="img/cabelos.jpg" alt="Promoção hidratane para o cabelo"></div>
+      <div class="swiper-slide"><img src="img/skincare2.jpg" alt="Promoção skincare2"></div>
+      <div class="swiper-slide"><img src="img/maquiagem1.jpg" alt="Promoção maquiagem1"></div>
+
+    </div>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">As melhores fragrâncias</h2>
+        <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <!-- 2ª secão -->
+          <div class="swiper-slide"><img src="img/perfume 1.jpg" alt="Perfumes Belezuras"></div>
+          <div class="swiper-slide"><img src="img/perfume 2.jpg" alt="Perfumes Belezuras"></div>
+          <div class="swiper-slide"><img src="img/perfume 3.jpg" alt="Perfumes Belezuras"></div>
+          <div class="swiper-slide"><img src="img/perfume 4.jpg" alt="Perfumes Belezuras"></div>
+          <div class="swiper-slide"><img src="img/perfume5.jpg" alt="Perfumes Belezuras"></div>
+    
+        </div>
+
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Foi aqui que ouvi auto cuidado?</h2>
+            <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+             <!-- If we need pagination -->
+             <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <!-- 3ª secão -->
+              <div class="swiper-slide"><img src="img/batom.jpg" alt="batom Belezuras"></div>
+              <div class="swiper-slide"><img src="img/rimel (1).jpg" alt="Rimel Belezuras"></div>
+              <div class="swiper-slide"><img src="img/esfoliante corporal.jpg" alt="esfoliante Belezuras"></div>
+              <div class="swiper-slide"><img src="img/batom1.jpg" alt="batom Belezuras"></div>
+            </div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</section>
+<section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades</h2>
+   <p class="contato__instagram"> Acompanhe nossas redes sociais </p>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+ 
+spaceBetween: 10,
+slidesPerView: 3,
+pagination: {
+    el: 'swiper-pagination',
+    type:'bullets',
+}
+});
+  </script>
+</body>
+</html>
